@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CIGLE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pregradna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Pregradna"
+        android:onClick="idiIzracunPreg"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cigleniBlok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cigleni Blok"
+        android:onClick="idiIzracunVanjska"
+        app:layout_constraintEnd_toEndOf="@+id/pregradna"
+        app:layout_constraintStart_toStartOf="@+id/pregradna"
+        app:layout_constraintTop_toBottomOf="@+id/pregradna" />
+
+    <Button
+        android:id="@+id/bb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="idiIzracunBB"
+        android:text="beton blok"
+        app:layout_constraintEnd_toEndOf="@+id/cigleniBlok"
+        app:layout_constraintStart_toStartOf="@+id/cigleniBlok"
+        app:layout_constraintTop_toBottomOf="@+id/cigleniBlok" />
+
+    <Button
+        android:id="@+id/ytong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ytong"
+        android:onClick="idiIzracunYtong"
+        app:layout_constraintEnd_toEndOf="@+id/bb"
+        app:layout_constraintStart_toStartOf="@+id/bb"
+        app:layout_constraintTop_toBottomOf="@+id/bb" />
+</androidx.constraintlayout.widget.ConstraintLayout>

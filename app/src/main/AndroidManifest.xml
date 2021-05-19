@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meee">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Meee">
+        <activity android:name=".MainActivity"
+            android:label="Log in">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistracijaActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Registracija"></activity>
+        <activity android:name=".HomeScreenActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Home"></activity>
+        <activity android:name=".ProcjenaActivity"
+            android:parentActivityName=".HomeScreenActivity"
+            android:label="Procjena"></activity>
+        <activity android:name=".MojiProjektiActivity"
+            android:parentActivityName=".HomeScreenActivity"
+            android:label="Moji projekti"></activity>
+        <activity android:name=".MojRacunActivity"
+            android:parentActivityName=".HomeScreenActivity"
+            android:label="Moj račun"></activity>
+        <activity android:name=".NoviProjektActivity"
+            android:parentActivityName=".HomeScreenActivity"
+            android:label="Novi projekt"></activity>
+        <activity android:name=".ProjektActivity"
+            android:parentActivityName=".MojiProjektiActivity"
+            android:label="Detalji projekta"></activity>
+        <activity android:name=".CrijepActivity"
+            android:parentActivityName=".ProcjenaActivity"
+            android:label="Crijep"></activity>
+        <activity android:name=".CigleActivity"
+            android:parentActivityName=".ProcjenaActivity"
+            android:label="Cigle"></activity>
+        <activity android:name=".IzracunSvihActivity"
+            android:parentActivityName=".ProcjenaActivity"
+            android:label="Izračun"></activity>
+        <activity android:name=".GotovIzracunActivity"
+            android:parentActivityName=".IzracunSvihActivity"
+            android:label="Gotovi izračun"></activity>
+        <activity android:name=".Troskovnik"
+            android:parentActivityName=".ProjektActivity"
+            android:label="Troškovnik"></activity>
+
+    </application>
+
+</manifest>

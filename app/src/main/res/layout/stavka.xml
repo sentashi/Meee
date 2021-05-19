@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/redniBrTextView"
+                android:layout_width="65dp"
+                android:layout_height="62dp"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center"
+                android:text="Redni br"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/stavkaTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/stavkaTextView"
+                android:layout_width="123dp"
+                android:layout_height="62dp"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center"
+                android:text="Stavka"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/kolicinaTextView"
+                app:layout_constraintStart_toEndOf="@+id/redniBrTextView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/kolicinaTextView"
+                android:layout_width="111dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="1dp"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center"
+                android:text="Kolicina"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cijenaTextView"
+                app:layout_constraintStart_toEndOf="@+id/stavkaTextView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cijenaTextView"
+                android:layout_width="109dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="1dp"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center"
+                android:text="Cijena"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kolicinaTextView"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

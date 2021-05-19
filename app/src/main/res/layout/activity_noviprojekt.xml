@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/naziv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Naziv projekta"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/klijent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Klijent"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/naziv"
+        app:layout_constraintStart_toStartOf="@+id/naziv"
+        app:layout_constraintTop_toBottomOf="@+id/naziv" />
+
+    <EditText
+        android:id="@+id/budzet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Budžet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/klijent"
+        app:layout_constraintStart_toStartOf="@+id/klijent"
+        app:layout_constraintTop_toBottomOf="@+id/klijent" />
+
+    <EditText
+        android:id="@+id/opis"
+        android:layout_width="231dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Opis projekta (opcionalno)"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/budzet"
+        app:layout_constraintStart_toStartOf="@+id/budzet"
+        app:layout_constraintTop_toBottomOf="@+id/budzet"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="NOVI PROJEKT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Napravi"
+        android:onClick="addNewProject"
+        app:layout_constraintEnd_toEndOf="@+id/opis"
+        app:layout_constraintStart_toStartOf="@+id/opis"
+        app:layout_constraintTop_toBottomOf="@+id/opis" />
+</androidx.constraintlayout.widget.ConstraintLayout>
